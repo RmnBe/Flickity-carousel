@@ -43,6 +43,8 @@
   },
   "dependencies": {
     "build": "^0.1.4",
+    "flickity": "^2.2.0",
+    "normalize.css": "^8.0.1",
     "rimraf": "^2.6.3"
   },
   "description": ""
