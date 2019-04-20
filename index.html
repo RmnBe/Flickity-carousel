@@ -8,36 +8,44 @@
         <link rel="stylesheet" type="text/css" href="css/style.css"> 
     </head>
     <body>
+    	<button class="myButton">restart</button>
     	<div class="main-carousel" data-flickity>
-  			<div class="carousel-cell">
-				<div class="container" style="background-image: url(https://images.unsplash.com/photo-1555381983-49b080e6ac89?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=625&q=80)">
-					<p>Some text on cell 1</p>
-  				</div>
+  			<div class="carousel-cell" id="carousel-cell1">
+				<div class="container" style="background-image: url(images/img1.jpg)" >
+				<p>Some text on cell 1</p>
+				</div>
   			</div>
-  			<div class="carousel-cell">
-				<div class="container">
-					<img src="img2.jpg" alt="some picture"/>
-					<p>Some text on cell 2</p>
-  				</div>
+  			<div class="carousel-cell" id="carousel-cell2">
+				<div class="container" style="background-image: url(images/img2.jpg)">
+				<p>Some text on cell 2</p>
+				</div>
   			</div>
-  			<div class="carousel-cell">
-				<div class="container" style="background-image: url(img3.jpg)">
-					<p>Some text on cell 3</p>
-  				</div>
+  			<div class="carousel-cell" id="carousel-cell3">
+				<div class="container" style="background-image: url(images/img3.jpg)">
+				<p>Some text on cell 3</p>
+				</div>
   			</div>
-  			<div class="carousel-cell">
-				<div class="container" style="background-image: url(img4.jpg)">
-					<p>Some text on cell 4</p>
-  				</div>
+  			<div class="carousel-cell" id="carousel-cell4">
+				<div class="container" style="background-image: url(images/img4.jpg)">
+				<p>Some text on cell 4</p>
+				</div>
   			</div>
-  			<div class="carousel-cell">
-				<div class="container" style="background-image: url(img5.jpg)">
-					<p>Some text on cell 5</p>
-  				</div>
+  			<div class="carousel-cell"id="carousel-cell5">
+				<div class="container" style="background-image: url(images/img5.jpg)">
+				<p>Some text on cell 5</p>
+				</div>
   			</div>
 
   			
 		</div>
+		<p>View:
+			<a href="#carousel-cell1">cell 1</a>
+			<a href="#carousel-cell2">cell 2</a>
+			<a href="#carousel-cell3">cell 3</a>
+			<a href="#carousel-cell4">cell 4</a>
+			<a href="#carousel-cell5">cell 5</a>
+		</p>
+		<div class="progress-bar"></div>
  
 
 	<script src="vendor/flickity.pkgd.min.js"></script>
