@@ -9,9 +9,9 @@ for (var i=0; i < newCarousel.length; i++){
 	console.log(newCarousel[i]);
 	listCells += Mustache.render(templateCarousel, newCarousel[i]);
 };
-})
+
 var carousel = document.querySelector('.main-carousel');
-carousel.innerHTML+= listCells;
+carousel.innerHTML += listCells;
 
 var flkty = new Flickity( carousel, {
 	imagesLoaded: true,
@@ -34,5 +34,5 @@ flkty.on( 'scroll', function( progress ) {
   progress = Math.max( 0, Math.min( 1, progress ) );
   progressBar.style.width = progress * 100 + '%';
 });
-
+})();
 
