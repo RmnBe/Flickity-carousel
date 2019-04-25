@@ -5,10 +5,10 @@
 	var templateCarousel = document.getElementById('newCarousel').innerHTML;
 Mustache.parse(templateCarousel);
 var listCells = '';
-for (var i=0; i < newCarousel.length; i++){
-	console.log(newCarousel[i]);
-	listCells += Mustache.render(templateCarousel, newCarousel[i]);
-};
+for (var i = 0; i < cellsCarousel.length; i++) {
+	console.log(cellsCarousel[i]);
+	listCells += Mustache.render(templateCarousel, cellsCarousel[i]);
+}
 
 var carousel = document.querySelector('.main-carousel');
 carousel.innerHTML += listCells;
