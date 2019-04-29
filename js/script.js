@@ -45,7 +45,7 @@ window.initMap = function(){
 				//flkty.next(true);
 				flkty.select(i);
 			});
-			flkty.on( 'change', function( index ){
+			flkty.on( 'change', function(index){
 				map.setCenter('cellsCarousel[index].coords');
 				map.setZoom(7);
 
