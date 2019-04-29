@@ -26,7 +26,7 @@ var flkty = new Flickity( carousel, {
 });
 var restartBtn = document.querySelector('.myButton');
 restartBtn.addEventListener('click', function(){
-	flkty.next(true);
+	//flkty.next(true);
 	flkty.select( 0 );
 })
 
@@ -41,6 +41,15 @@ window.initMap = function(){
 	for (var i = 0; i < cellsCarousel.length; i++) {
 			var markers = [];
 			markers[i] = new google.maps.Marker({position: cellsCarousel[i].coords, map: map});
+			markers[i].addListener('click', function(){
+				//flkty.next(true);
+				flkty.select(i);
+			});
+			flkty.on( 'change', function( index ){
+				map.setCenter('cellsCarousel[index].coords');
+				map.setZoom(7);
+
+			});
 	
 	};
 };
