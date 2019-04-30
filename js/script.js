@@ -38,7 +38,7 @@ flkty.on( 'scroll', function( progress ) {
 	
 window.initMap = function(){
 	var map = new google.maps.Map(document.getElementById('map'), {zoom: 4, center: cellsCarousel[0].coords});
-	for (var i = 0; i < cellsCarousel.length; i++) {
+	for (let i = 0; i < cellsCarousel.length; i++) {
 			var markers = [];
 			markers[i] = new google.maps.Marker({position: cellsCarousel[i].coords, map: map});
 			markers[i].addListener('click', function(){
